@@ -58,10 +58,10 @@ function FormSection() {
                     <input type="text" name="price" id="price" disabled className="block w-76 rounded-3xl border-0 py-2 pl-10 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-inset focus:ring-sky-900 sm:text-sm sm:leading-6" placeholder={roles} />
                     <div className="absolute inset-y-0 right-0 flex mr-10 border-l  items-center ">
                         <select id="roles" onClick={onSelect} name="roles" defaultValue="Select Roles" className="h-full rounded-md border-0 cursor-pointer bg-transparent py-0 lg:mr-2 pl pr text-gray-500 focus:outline-none sm:text-sm">
-                            <option value="Roles">Roles</option>
-                            <option value="Student">Student</option>
-                            <option value="Faculty">Faculty</option>
-                            <option value="Admin">Admin</option>
+                            <option onClick={onSelect} value="Roles">Roles</option>
+                            <option onClick={onSelect} value="Student">Student</option>
+                            <option onClick={onSelect} value="Faculty">Faculty</option>
+                            <option onClick={onSelect} value="Admin">Admin</option>
                         </select>
                     </div>
                 </div>
