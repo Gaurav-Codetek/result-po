@@ -67,7 +67,7 @@ function FormSection() {
                 </div>
             </div>
             {/* --------------Submit Button---------------- */}
-            <button className="rounded-full bg-sky-600 py-1 px-4 text-slate-50 w-2/5 hover:bg-sky-700 mb-3">Log In</button>
+            <button className="rounded-full bg-sky-600 py-1 px-4 mt-5 md:mt-0 text-slate-50 w-2/5 hover:bg-sky-700 mb-3">Log In</button>
             <h3 className="text-sm mb-4 hover:text-sky-700 cursor-pointer hover:underline" >Forgot Password ?</h3>
         </>
     );
