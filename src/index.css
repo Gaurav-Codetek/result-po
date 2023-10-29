@@ -19,6 +19,10 @@
   width: 76%;
 }
 
+.w-85{
+  width: 85%;
+}
+
 .bg-partial{
   background-color: rgba(124, 123, 123, 0.477);
 }
