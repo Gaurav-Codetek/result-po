@@ -5,24 +5,27 @@ import { RiLockPasswordFill } from 'react-icons/ri'
 
 
 function FormSection() {
-    const [roles, setRoles] = useState('Select Roles')
+    // const [roles, setRoles] = useState('Select Roles')
+    const [roleNew, setRoleNew] = useState('Select Roles')
 
     const onSelect = () => {
         let a = document.querySelector('#roles');
         var rolesValue = a.value;
+        setRoleNew(rolesValue)
+        
 
-        if (rolesValue === "Roles") {
-            setRoles('Select Roles');
-        }
-        else if (rolesValue === "Student") {
-            setRoles('Student');
-        }
-        else if (rolesValue === "Faculty") {
-            setRoles('Faculty');
-        }
-        else if (rolesValue === "Admin") {
-            setRoles('Admin')
-        }
+        // if (rolesValue === "Roles") {
+        //     setRoles('Select Roles');
+        // }
+        // else if (rolesValue === "Student") {
+        //     setRoles('Student');
+        // }
+        // else if (rolesValue === "Faculty") {
+        //     setRoles('Faculty');
+        // }
+        // else if (rolesValue === "Admin") {
+        //     setRoles('Admin')
+        // }
         // else{
         //     setRoles('Select Roles')
         // }
@@ -55,7 +58,7 @@ function FormSection() {
                     <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-12 lg:pl-14 w-4">
                         <span className="text-gray-500 sm:text-sm"><MdContacts size="20" color='#0a7fd5' /></span>
                     </div>
-                    <input type="text" name="price" id="price" disabled className="block w-76 rounded-3xl border-0 py-2 pl-10 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-inset focus:ring-sky-900 sm:text-sm sm:leading-6" placeholder={roles} />
+                    <input type="text" name="price" id="price" disabled className="block w-76 rounded-3xl border-0 py-2 pl-10 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-inset focus:ring-sky-900 sm:text-sm sm:leading-6" placeholder={roleNew} />
                     <div className="absolute inset-y-0 right-0 flex mr-10 border-l  items-center ">
                         <select id="roles" onClick={onSelect} name="roles" defaultValue="Select Roles" className="h-full rounded-md border-0 cursor-pointer bg-transparent py-0 lg:mr-2 pl pr text-gray-500 focus:outline-none sm:text-sm">
                             <option onClick={onSelect} value="Roles">Roles</option>
