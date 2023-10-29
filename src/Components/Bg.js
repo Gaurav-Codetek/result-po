@@ -7,7 +7,7 @@ function Bg() {
     return (
         <>
             <div className=" bg-img bg-cov h-screen blur-sm relative"></div>
-            <div className="h-fit absolute border top-1/2 left-2/4 trans-50-revert flex w-85 my-1 md:my-0 md:w-11/12 lg:w-9/12 rounded-r-md rounded-l-md shadow-2xl" >
+            <div className="h-fit absolute border top-1/2 left-2/4 trans-50-revert flex w-85 md:w-11/12 lg:w-9/12 rounded-r-md rounded-l-md shadow-2xl" >
                 <div className="bg-white w-full md:w-2/5 flex-col items-center justify-center rounded-l-md rounded-r-md md:rounded-r-none shadow-2xl ">
                     <div className="flex items-center justify-center">
                         <img className="h-32 w-32 md:h-36 md:w-36 mt-4" src={logo} alt="UIET-logo" />
