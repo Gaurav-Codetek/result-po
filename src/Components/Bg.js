@@ -6,7 +6,7 @@ import {BsArrowRight} from 'react-icons/bs'
 function Bg() {
     return (
         <>
-            <div className=" bg-img bg-cov h-screen blur-sm relative"></div>
+            <div className=" bg-img bg-cov h-screen blur-sm relative overflow-hidden"></div>
             <div className="h-fit absolute border top-1/2 left-2/4 trans-50-revert flex w-4/5 md:w-11/12 lg:w-9/12 rounded-r-md rounded-l-md shadow-2xl" >
                 <div className="bg-white w-full md:w-2/5 flex-col items-center justify-center rounded-l-md rounded-r-md md:rounded-r-none shadow-2xl ">
                     <div className="flex items-center justify-center">
